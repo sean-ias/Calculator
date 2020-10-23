@@ -1,0 +1,15 @@
+*{margin: 0;
+padding: 0;}
+body{background: linear-gradient(to right, red, blue);
+height: 100%;}
+
+.calcnew {margin-top: 50px;}
+
+.btn{width: 50px; height: 50px; margin: 2px; font-size: 25px; cursor: pointer; border: none; background-color: blue; color: white;}
+.textview {width: 217px; margin: 5px; font-size: 25px; padding: 5px; border: none; color: blue;}
+.calc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}

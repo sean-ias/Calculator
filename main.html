@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="core.js">
+    </script>
+</head>
+<body>
+    <div class="calc">
+        <form name="form">
+        <input name="textview" class="textview"><br>
+        </form>
+        <table>
+            <tr>
+                <td><input type="button" onclick="insert(0)" value="0" class="btn"></td>
+                <td><input type="button" onclick="insert(1)" value="1" class="btn"></td>
+                <td><input type="button" onclick="insert(2)" value="2" class="btn"></td>
+                <td><input type="button" onclick="insert('+')" value="+" class="btn"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="insert(3)" value="3" class="btn"></td>
+                <td><input type="button" onclick="insert(4)" value="4" class="btn"></td>
+                <td><input type="button" onclick="insert(5)" value="5" class="btn"></td>
+                <td><input type="button" onclick="insert('-')" value="-" class="btn"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="insert(6)" value="6" class="btn"></td>
+                <td><input type="button" onclick="insert(7)" value="7" class="btn"></td>
+                <td><input type="button" onclick="insert(8)" value="8" class="btn"></td>
+                <td><input type="button" onclick="insert('*')" value="*" class="btn"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="insert(9)" value="9" class="btn"></td>
+                <td><input type="button" onclick="insert('/')" value="/" class="btn"></td>
+                <td><input type="button" onclick="clean()" value="C" class="btn"></td>
+                <td rowspan="5"><input type="button" style="height: 107px;" onclick="equal()" value='=' class="btn"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" style="width: 115px;" onclick="insert('.')" value='.' class="btn"></td>
+                <td><input type="button" onclick="back()" value='<' class="btn"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="calcnew">
+        <input type="number" name="firstnum" id="firstnum">
+            <select id="opertype">
+                <option value="+" >+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="^">^</option>
+            </select>
+        <input type="number" name="secondnum" id="secondnum">
+    <button onclick="calca()">=</button>
+    <span id="resultnum"></span>
+    </div>
+</body>
+</html>
